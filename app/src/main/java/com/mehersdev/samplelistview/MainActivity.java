@@ -2,15 +2,15 @@ package com.mehersdev.samplelistview;
 
 /**
  * Created by Meher's Dev on 24-09-2015.
+ * At Time PM 03:00
  */
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         ls.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Object o;
+                
                 if (position == 0) {
                     Intent in = new Intent(MainActivity.this, SecondActivity.class);
                     in.putExtra(EXTRA_MESSAGE, "One");
